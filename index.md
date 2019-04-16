@@ -40,3 +40,5 @@
 
 ## Обучение с 0 до Junior
 Наша команда также разработала систему обучения по front-end и back-end разработке с нуля. Изучить подробности и заполнить форму, чтобы начать изучение программы, можно [на нашей странице](https://www.fullstack-development.com/front-end-education).
+
+[front](./frontend/README.md)
