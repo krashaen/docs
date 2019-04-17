@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+.main-content {
+  margin: 0;
+}
+
 .main-navigation {
   max-width: 15rem;
 }
@@ -12,8 +16,11 @@
 }
 
 .nav-menu {
+  margin: 1rem;
+  padding: 1rem;
   position: sticky;
   top: 5%;
+  background-color: rgba(246,246,246,0.7);
 }
 
 .menu-list {
@@ -22,4 +29,11 @@
 
 .list-item {
   list-style-type: none;
+}
+
+@media screen and (min-width: 64em) {
+  .page-header {
+    padding: 1rem 0;
+  }
+
 }
