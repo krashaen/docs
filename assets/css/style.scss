@@ -3,10 +3,14 @@
 
 @import "{{ site.theme }}";
 
-.btn {
-  color: red
+.main-navigation {
+  max-width: 15rem;
 }
 
-.testtest {
-  color: red;
+.content-wrapper {
+  display: flex;
+}
+
+.list-item {
+  list-style-type: none;
 }
