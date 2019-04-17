@@ -11,6 +11,15 @@
   display: flex;
 }
 
+.nav-menu {
+  position: sticky;
+  top: 5%;
+}
+
+.menu-list {
+  padding-left: 1rem;
+}
+
 .list-item {
   list-style-type: none;
 }
