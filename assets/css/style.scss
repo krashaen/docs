@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "monokai.css";
 @import "{{ site.theme }}";
+@import "vim.css";
 
 .main-content {
   margin: 0;
