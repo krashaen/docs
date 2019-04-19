@@ -1,123 +1,42 @@
----
-layout: default
----
+# Developers roadmap
+Как изучить front-end или back-end разработку? Как максимально эффективно прокачаться от junior к middle и от middle к senior? Какие ресурсы выбирать по каким темам?
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+## Введение
+В одном репозитории мы собрали темы и ресурсы, которые помогут вам вырасти как front-end или back-end разработчику. Мы советуем выбрать одно из этих двух направлений и максимально сфокусироваться на нём. Только после уверенного овладения одной из областей при большом желании можно начинать переходить на другую, либо оставаться в своей области и изучать её ещё глубже. 
 
-[Link to another page](./another-page.html).
+## Статус
+Сейчас программа находится в фазе активного переноса с прошлой платформы, где мы её писали (rizzoma.com), поэтому многие куски пока что ещё упущены, структура материала не окончательно заполнена.
 
-There should be whitespace between paragraphs.
+## Градации
+Ниже приведены наши субъективные представления стандартных уровней мастерства разработчиков. 
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+### Junior frontend developer 
+* Умеет решать локальные задачи, которые хорошо декомпозированы и укладываются в принятые в проекте соглашения и архитектурные принципы. 
+* Хорошо знает основной инструментарий — html, css, javascript. 
+* Уверенно владеет React.JS на уровне, который позволяет решать абсолютное большинство стандартных задач, связанных с интерфейсами.
+* Умеет ясно излагать свои мысли в письменной и устной форме, понимает важность проактивности для командной работы.
 
-# Header 1
+### Middle frontend developer
+* Отлично знает инструментарий, включая React.JS.
+* Имеет навыки проектирования и знает основные принципы разработки поддерживаемого продукта, т.е. владеет ООП, ФП, понимает DDD и SOLID.
+* Умеет спроектировать небольшого и среднего размера стандартные проекты (интерфейс для проекта до ±1млн строк с командой до ±10 участников).
+* Умеет эффективно решать задачи в рамках заданной архитектуры (например, следуя парадигме от React+Redux).
+* Знает, как решить нетривиальные локальные задачи, чаще всего не связанные с интерфейсами напрямую, например, написать небольшую библиотеку для удобного API по работе с URI.
+* Понимает бизнес-ценность своей работы, может предложить пересмотр требований задачи для лучшего достижений этих ценностей, может предложить убрать задачу из бэклога, аргументировав возможными альтернативами или даже доказав её низкий приоритет.
+* Умеет декомпозировать и довольно точно оценить объем работ для небольших работ (до 2-х человекомесяцев). Умеет явно увидеть области риска при оценке, сузить их наименьшими усилиями и явно фокусировать внимание команды на них.
+* Проявляет эмпатию, не перебивает, умеет выслушать, понять точку зрения оппонента и предложить аргументированные альтернативы.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+### Senior frontend developer
+* Отлично понимает весь контекст проекта, включая пользователей (и их цели), бизнес, всю команду разработчиков. 
+* Понимает бизнес-ценности всего продукта и всей команды.
+* Может помочь ясно сформулировать требования к задаче, учитывая стратегические цели компании.
+* Может спроектировать верхнеуровневую архитектуру продукта учитывая весь контекст (пользователи, бизнес, 3rd party services etc).
+* Сам может выбрать необходимый стек для всего комплекса решений, который может состоять из нескольких больших проектов.
+* Умеет самостоятельно эффективно разбираться в неизвестных и достаточно объемных областях, применять изученное для решения поставленных проблем там, где это эффективно (например, быстро изучить meteor.js и предложить создавать проект на нем, если он действительно лучше подходит).
+* Умеет давать оценки даже для существенного объема работ, запросить все необходимые требования, доработать их при необходимости, заложить риски.
 
-## Header 2
+## Рекомендация
+Советуем для удобного чтения установить расширение [Octotree](https://chrome.google.com/webstore/detail/octotree/bkhaagjahfmjljalopjnoealnfndnagc?hl=ru).
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+## Обучение с 0 до Junior
+Наша команда также разработала систему обучения по front-end и back-end разработке с нуля. Изучить подробности и заполнить форму, чтобы начать изучение программы, можно [на нашей странице](https://www.fullstack-development.com/front-end-education).
