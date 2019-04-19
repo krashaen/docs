@@ -2,7 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
-@import url(monokai.scss);
+@import "monokai.scss";
 
 .main-content {
   margin: 0;
