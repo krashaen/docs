@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "{{ site.theme }}";
 @import "monokai.css";
+@import "{{ site.theme }}";
 
 .main-content {
   margin: 0;
