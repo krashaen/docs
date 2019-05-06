@@ -13,7 +13,7 @@
 * Когда использовать `null`, а когда `undefined`?
 * Какие есть способы создания глобальных переменных?
 
-#### Ресурсы%
+#### Ресурсы
 * [Types (Airbnb JavaScript Style Guide)](https://github.com/airbnb/javascript#types)
 
 ## Выражения
@@ -29,8 +29,8 @@
 * [Variable Declarations](https://www.typescriptlang.org/docs/handbook/variable-declarations.html)
 
 ## Массивы
-* Способы создания массивов (литерал, конструктор, фабричные методы)
-* Удаление элемента из массива (какие есть способы и в чем особенности)
+* Способы создания массивов (литерал, конструктор, фабричные методы `Array.from()` и `Array.of()`);
+* Удаление элемента из массива (какие есть способы и в чем особенности);
 * Свойство `length` у массива:
     * Какое значение будет у свойства `length` массива `a` и почему:
         ```javascript
@@ -54,10 +54,10 @@
 * Как реализовать функцию `bind`?
 * Решить такую вот проблему: пускай у нас есть массив ссылок, и наша задача — сделать так, чтобы при клике на каждую выводился `alert`ом ее порядковый номер. Первое решение, что приходит в голову, выглядит так:
     ```javascript
-    for (var i = 0; i < links.length; i++) {
-      links[i].onclick = function() {
-        alert(i);
-      }
+    for (var i = 0; i < links.length; i++) {
+       links[i].onclick = function() {
+          alert(i);
+       }
     }
     ```
     На деле же оказывается, что при клике на любую ссылку выводится одно и то же число — значение `links.length`. Почему так происходит и как эту гадость исправить?
@@ -73,7 +73,7 @@
 * [4 шаблона вызова функции. Крокфорд Д. JavaScript: сильные стороны.](https://orkhanalyshov.com/media/JavaScript/books/TheGoodParts.pdf#page=44&zoom=auto,-265,627)
 
 
-## Прототипы:
+## Прототипы
 * Что такое функция-конструктор, как их создавать и как ими пользоваться?
 * Что такое прототип? Какие преимущества он дает?
 * Зачем методы объекта лучше всего хранить в прототипе, а не в самом объекте?
@@ -84,12 +84,12 @@
     Нужен реальный пример. Чтобы понять вопрос, привожу псевдокод:
     ```javascript
     class Person
-    method getFullName()
-        return this.name + this.surname
+        method getFullName()
+            return this.name + this.surname
 
     class Employee extends Person
-    method getFullName()
-        return super() + this.position
+        method getFullName()
+            return super() + this.position
     ```
 * Какие есть способы навсегда привязать метод класса к его инстансу (чтобы `this` всегда был текущим экземпляром класса)?
 

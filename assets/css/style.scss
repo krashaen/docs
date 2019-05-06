@@ -4,8 +4,13 @@
 @import "{{ site.theme }}";
 @import "vim.css";
 
+li {
+  margin: .5rem 0;
+}
+
 .main-content {
   margin: 0;
+  width: 100%;
 }
 
 .main-navigation {
@@ -14,9 +19,11 @@
 
 .content-wrapper {
   display: flex;
+  padding: 20px;
 }
 
 .nav-menu {
+  width: 200px;
   margin: 1rem;
   padding: 1rem;
   position: sticky;

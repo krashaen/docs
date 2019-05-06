@@ -1,6 +1,6 @@
 var sectionHeight = function() {
-  var total    = $(window).height(),
-      $section = $('section').css('height','auto');
+  var total    = $(window).height();
+  var $section = $('section').css('height','auto');
 
   if ($section.outerHeight(true) < total) {
     var margin = $section.outerHeight(true) - $section.height();
@@ -14,7 +14,7 @@ $(window).resize(sectionHeight);
 
 $(function() {
   $("section h1, section h2, section h3").each(function(){
-    $("nav ul").append("<li class='list-item tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^[a-zа-яё\s]+$/g,'') + "'>" + $(this).text() + "</a></li>");
+    $(".current-page-navigation ul").append("<li class='list-item tag-" + this.nodeName.toLowerCase() + "'><a href='#" + $(this).text().toLowerCase().replace(/ /g, '-').replace(/[^[a-zа-яё\s]+$/g,'') + "'>" + $(this).text() + "</a></li>");
     $(this).attr("id",$(this).text().toLowerCase().replace(/ /g, '-').replace(/[^[a-zа-яё\s]+$/g,''));
     $("nav ul li:first-child a").parent().addClass("active");
   });
